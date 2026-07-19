@@ -461,3 +461,92 @@
                         <a href="https://github.com/33water/todo-pomodoro-app" class="code" target="_blank">
                             <i class="fab fa-github"></i> 源码
                         </a>
+                    </div>
+                </div>
+
+                <!-- 脑洞大翻车 -->
+                <div class="project-card">
+                    <div class="icon-wrap"><i class="fas fa-puzzle-piece"></i></div>
+                    <div class="name">脑洞大翻车</div>
+                    <div class="desc">
+                        以"玩中学"为理念的成语猜谜趣味应用。AI 动态出题、文字/看图双模式、
+                        20秒倒计时、后悔药（排除错项+偷看单字）、AI 陪玩调侃、连错冷笑话彩蛋、
+                        积分系统、连胜加成、错题本、收藏夹、成语词典、学习统计与成就徽章。
+                    </div>
+                    <div class="tags">
+                        <span>uni-app</span>
+                        <span>Vue3</span>
+                        <span>SCSS</span>
+                        <span>番茄钟</span>
+                        <span>AI 出题</span>
+                    </div>
+                    <div class="links">
+                        <a href="https://33water.github.io/idiom-quiz-game/" class="demo" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> 在线 Demo
+                        </a>
+                        <a href="https://github.com/33water/idiom-quiz-game" class="code" target="_blank">
+                            <i class="fab fa-github"></i> 源码
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 占位 2 -->
+                <div class="project-card placeholder">
+                    <div class="icon-wrap"><i class="fas fa-lightbulb"></i></div>
+                    <div class="name">更多项目准备中</div>
+                    <div class="desc">正在开发更有趣的项目，完成后会第一时间更新，敬请期待。</div>
+                    <div class="tags"><span>即将上线</span></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Contact ========== -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">联系我</h2>
+            <p class="section-subtitle">欢迎交流与合作</p>
+            <div class="section-divider"></div>
+            <div class="contact-wrap">
+                <p>有任何问题、建议或合作想法，欢迎通过下方方式找到我。</p>
+                <div class="contact-links">
+                    <a href="https://github.com/33water" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:33water@example.com" title="邮箱">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Footer ========== -->
+    <footer>
+        <p>&copy; 2026 33water · 用 ❤ 和 GitHub Pages 构建</p>
+    </footer>
+
+    <script>
+        document.getElementById('navToggle').addEventListener('click', function() {
+            document.getElementById('navLinks').classList.toggle('open');
+        });
+        document.querySelectorAll('.nav-links a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                document.getElementById('navLinks').classList.remove('open');
+            });
+        });
+        document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+            anchor.addEventListener('click', function(e) {
+                var target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    var offset = 72;
+                    var pos = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                    window.scrollTo({ top: pos, behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
